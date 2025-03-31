@@ -10,7 +10,7 @@ public:
         }
 
         priority_queue<pair<int,int>> pq;
-        for(auto& i: freq){
+        for(auto i: freq){
             pq.push({i.second,i.first});
         }
 
