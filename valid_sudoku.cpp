@@ -4,7 +4,7 @@ public:
         vector<vector<int>> box(10, vector<int>(10, 0));
 
         for(int i=0;i<9;i++){
-            vector<int> tp(10,0),tp1(10,0);
+            map<int,int> tp,tp1;
             for(int j=0;j<9;j++){
                 if(board[i][j]!='.'){
                     if(tp[board[i][j]-'0']++) return false;
@@ -22,4 +22,3 @@ public:
         return true;
     }
 };
-
